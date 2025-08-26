@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Actors Access State Filter",
+  "version": "1.0",
+  "description": "Filter listings to only show those in your state.",
+  "permissions": ["scripting", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://actorsaccess.com/projects/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
